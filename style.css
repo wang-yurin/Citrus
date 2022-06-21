@@ -41,7 +41,6 @@ body {
   line-height: 200px;
   letter-spacing: 0.3em;
   text-indent: 0.3em;
-  /* letter-spacing을 적용했을 때 가운데 정렬이 되지 않고 약간 왼쪽으로 쏠린 현상이 있어 text-indent를 사용했는데 letter-spacing 때문에 왼쪽으로 쏠린 것인가요?? */
 }
 
 .menu-icon.logo {
@@ -71,10 +70,8 @@ body {
   background-image: url(./images/jamong.png);
 }
 
-.menu-icon.lemon:hover,
-.menu-icon.orange:hover,
-.menu-icon.jamong:hover {
-  color: transparent;
+.menu-icon:hover {
+  text-indent: -9999px;
 }
 
 .contents {
@@ -83,6 +80,7 @@ body {
   background-repeat: no-repeat;
   background-position: right bottom;
   padding: 40px;
+  min-height: 300px;
   border-radius: 30px;
 }
 
@@ -90,20 +88,20 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: #f60;
+  line-height: 1;
 }
 
 .contents-title > span {
   vertical-align: top;
-  font-size: 16px;
+  font-size: 0.5em;
   font-weight: 400;
   color: black;
 }
 
 .contents-description {
-  margin: 20px 0 100px;
+  margin-top: 20px;
   line-height: 1.8;
   color: #999;
-  word-break: keep-all;
 }
 
 .contents-description > span {
